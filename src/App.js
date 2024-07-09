@@ -131,16 +131,16 @@ validateFields(){
   const errors ={}
 
   if(!mortageAmount){
-    errors['mortageAmount']= 'This mortageAmount field is required';
+    errors['mortageAmount']= 'This field is required';
   }
   if(!mortageTerm){ 
-    errors['mortageTerm']='This mortageTerm field is required';
+    errors['mortageTerm']='This field is required';
   }
   if(!mortageRate){ 
-    errors['mortageRate']='This mortageRate field is required';
+    errors['mortageRate']='This field is required';
   } 
   if(!selectedOption){
-    errors['selectedOption']='This mortageType field is required';
+    errors['selectedOption']='This field is required';
   }
   this.setState({
     validationErrors:errors
